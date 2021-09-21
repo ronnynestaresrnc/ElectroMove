@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {RickandmortyService} from '../../services/rickandmorty.service';
 
 
 @Component({
@@ -8,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./noticias.component.css']
 })
 export class NoticiasComponent implements OnInit {
+  nombre: string = "dime la verdad";
+characters$  = this.dataSvc.characters$;
 
-  constructor() { }
+
+  constructor(public dataSvc:RickandmortyService) { }
 
   ngOnInit(): void {
+this.characters$;
+
+
   }
 
 }

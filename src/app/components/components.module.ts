@@ -11,7 +11,8 @@ NavbarComponent,
   ],
   imports: [
    ProductsRoutes,
-    CommonModule
+    CommonModule,
+
   ]
   ,exports:[MyfooterComponent,NavbarComponent]
 })

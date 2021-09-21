@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { ProductsModule } from './products/products.module';
 import { ComponentsModule } from './components/components.module';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ComponentsModule } from './components/components.module';
     BrowserModule,
     AppRoutingModule,
     ProductsModule,
-    ComponentsModule
+    ComponentsModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

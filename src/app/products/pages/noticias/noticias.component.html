@@ -1,5 +1,6 @@
-<p>que fue
 
-<app-card></app-card>
 
-</p>
+<app-card   *ngFor="let value of characters$ | async"  [characters$]="characters$">{{value.name}}</app-card>
+
+
+
