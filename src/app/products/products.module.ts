@@ -12,6 +12,7 @@ export class AppRoutingModule { }
     NoticiasComponent
   ],
   imports: [
+    
     CommonModule,
     ComponentsModule,
     ProductsRoutes

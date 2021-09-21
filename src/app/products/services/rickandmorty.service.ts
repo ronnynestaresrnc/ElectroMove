@@ -3,15 +3,13 @@ import {Apollo,gql} from "apollo-angular";
 import { take ,tap} from "rxjs/operators";
 import { BehaviorSubject } from 'rxjs';
 const QUERY = gql`{
-  characters(page: 1) {
-    info {
-      count,
-      pages,
-      next,
-      prev 
-    }
+  characters {
+
     results {
       name
+      status
+      image
+      gender
     }
   }
 }

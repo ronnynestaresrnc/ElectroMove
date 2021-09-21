@@ -1,17 +1,19 @@
 import { Component, OnInit ,Input} from '@angular/core';
-import {RickandmortyService} from '../../services/rickandmorty.service';
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-@Input() characters$ = this.dataSvc.characters$;
+@Input() character:any;
 
-  constructor(public dataSvc:RickandmortyService) { }
+
+  constructor() { }
 
   ngOnInit(): void {
-    this.characters$
+    
+
   }
 
 }
