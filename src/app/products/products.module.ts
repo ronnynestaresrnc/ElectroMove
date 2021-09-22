@@ -4,12 +4,23 @@ import { CardComponent } from './components/card/card.component';
 import { NoticiasComponent } from './pages/noticias/noticias.component';
 import{ProductsRoutes} from './products.routes'
 import { ComponentsModule } from '../components/components.module';
+import { HomeComponent } from './pages/home/home.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { MyJsonService } from './services/my-json.service';
+import { ConsultasComponent } from './pages/consultas/consultas.component';
 export class AppRoutingModule { }
 
 @NgModule({
+  providers: [
+  MyJsonService
+],
   declarations: [
     CardComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    ConsultasComponent,
+
   ],
   imports: [
     
@@ -17,6 +28,6 @@ export class AppRoutingModule { }
     ComponentsModule,
     ProductsRoutes
   ]
-  ,exports:[NoticiasComponent]
+  ,exports:[NoticiasComponent,PageNotFoundComponent, ConsultasComponent]
 })
 export class ProductsModule { }

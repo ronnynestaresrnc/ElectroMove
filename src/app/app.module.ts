@@ -9,9 +9,11 @@ import { ComponentsModule } from './components/components.module';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
+
 
   ],
   imports: [
