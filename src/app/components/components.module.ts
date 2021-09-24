@@ -4,10 +4,12 @@ import { ProductsRoutes } from '../products/products.routes';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MyfooterComponent } from './myfooter/myfooter.component';
 
+
 @NgModule({
   declarations: [
 NavbarComponent,
-    MyfooterComponent
+    MyfooterComponent,
+
   ],
   imports: [
    ProductsRoutes,

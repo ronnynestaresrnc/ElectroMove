@@ -10,10 +10,7 @@ export class MyJsonService {
 
 private productos : Product[];
   constructor() { 
- this.productos = [
-    {id: 1,nombres: "Peter Parker" },
-    {id: 2,nombres: "Tony Stark" }
- ]
+ this.productos = myData
   }
 
   getProductos(){

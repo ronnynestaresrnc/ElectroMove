@@ -8,6 +8,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { MyJsonService } from './services/my-json.service';
 import { ConsultasComponent } from './pages/consultas/consultas.component';
+import { CatalogoComponent } from './pages/catalogo/catalogo.component';
+
+import { TablaListComponent } from './components/tabla-list/tabla-list.component';
+
 export class AppRoutingModule { }
 
 @NgModule({
@@ -20,6 +24,10 @@ export class AppRoutingModule { }
     HomeComponent,
     PageNotFoundComponent,
     ConsultasComponent,
+    CatalogoComponent,
+ 
+    TablaListComponent,
+
 
   ],
   imports: [
@@ -28,6 +36,6 @@ export class AppRoutingModule { }
     ComponentsModule,
     ProductsRoutes
   ]
-  ,exports:[NoticiasComponent,PageNotFoundComponent, ConsultasComponent]
+  ,exports:[NoticiasComponent,PageNotFoundComponent, ConsultasComponent,CatalogoComponent]
 })
 export class ProductsModule { }
